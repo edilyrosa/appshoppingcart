@@ -5,11 +5,11 @@ import { HelpHttp } from "../../helpers/helpHttp";
 import Loader from "../Loader";
 import Message from "../Message";
 import { noData, setData } from "../../actions/shoppingActions";
+import InputSearch from "../InputSearch";
 
 
 function CatalogueProducts() {
 
-    const [searchValue, setSearchValue] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
@@ -40,14 +40,11 @@ function CatalogueProducts() {
         getAllData()
         }, []);
 
-        const onSearchValueChange = (e) => {
-            setSearchValue(e.target.value);
-          };
 
         return ( 
         <div>
             <h2>CATALOGUE OF PRODUCTS</h2>
-           
+           <InputSearch/>
             <br/>
             {loading && <Loader/>}
             {error && <Message msj={ `Error ${error.status}: ${error.statusText}`}  bgColor="#dc3545" />}
