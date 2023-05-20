@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 01",
+      "category": "home",
+      "description": "Product 01 description",
+      "price": 100,
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Product 02",
+      "category": "cosmetic",
+      "description": "Product 02 description",
+      "price": 200,
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Product 03",
+      "category": "food",
+      "description": "Product 03 description",
+      "price": 300,
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 5,
+      "name": "pro 6",
+      "category": "cosmetic",
+      "description": "Product 06 description",
+      "price": "600",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 8,
+      "name": "ropas",
+      "category": "clothes",
+      "description": "cute",
+      "price": "100.01",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 9,
+      "name": "sss",
+      "category": "sss",
+      "description": "sss",
+      "price": 0,
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 10,
+      "name": "sss",
+      "category": "sss",
+      "description": "ss",
+      "price": 0,
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 11,
+      "name": "xax",
+      "category": "xZX",
+      "description": "xzz",
+      "price": "12",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 12,
+      "name": "ddd",
+      "category": "wwww",
+      "description": "23qqq",
+      "price": "12.12",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 13,
+      "name": "dd",
+      "category": "dd",
+      "description": "dd",
+      "price": "1",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    }
+  ]
+}
