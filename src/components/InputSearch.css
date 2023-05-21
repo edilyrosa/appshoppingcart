@@ -17,10 +17,13 @@
   
   .inputSearch::placeholder {
     color: #a5a5a5;
-    font-family: "Montserrat";
     font-weight: 400;
   }
   
   .inputSearch:focus {
     outline-color: #ea8fd0;
   }
+
+  /* .inputSearch:disabled::placeholder {
+      color: aquamarine ;
+  } */

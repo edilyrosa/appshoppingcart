@@ -7,11 +7,16 @@ import Message from "../Message";
 import { noData, setData } from "../../actions/shoppingActions";
 import InputSearch from "../InputSearch";
 
+const initialInput = {
+  inputSearch:'',
+  inputOption:''
+}
 
 function CatalogueProducts() {
 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const [searchValue, setSearchValue] = useState(initialInput);
 
     const state = useSelector(state => state) 
     const dispatch = useDispatch()
@@ -36,15 +41,20 @@ function CatalogueProducts() {
           })
     }
  
-      useEffect(() => { //A la Carga inicial del form & tabla
+    useEffect(() => { //A la Carga inicial del form & tabla
         getAllData()
         }, []);
 
-
+        let textInput = searchValue.inputSearch.toLowerCase();
+        let textOption = searchValue.inputOption.toLowerCase();
+        let searchedProduct = []; //Products searched by user
+        if (textInput.length < 1) searchedProduct = products;//If user hasn't writen in the input search
+         else searchedProduct = products.filter((el) =>  (el[textOption].toString()).includes(textInput.toString()))//If user has writen in the input search
+        
         return ( 
         <div>
             <h2>CATALOGUE OF PRODUCTS</h2>
-           <InputSearch/>
+           <InputSearch searchValue={searchValue} setSearchValue={setSearchValue}/>
             <br/>
             {loading && <Loader/>}
             {error && <Message msj={ `Error ${error.status}: ${error.statusText}`}  bgColor="#dc3545" />}
@@ -62,11 +72,10 @@ function CatalogueProducts() {
                 </tr>
             </thead>
 
-
             <tbody>
                 {
                 products.length > 0 
-                ? products.map((e,index) => {
+                ? searchedProduct.map((e,index) => {
                     return (<tr key={index}>
                             <td>{e.id}</td>
                             <td>{e.name}</td>

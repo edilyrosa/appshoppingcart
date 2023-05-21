@@ -104,7 +104,29 @@
       "name": "dd",
       "category": "dd",
       "description": "dd",
-      "price": "1",
+      "price": "2",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 14,
+      "name": "carne",
+      "category": "food",
+      "description": "carne",
+      "price": "23.22",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 15,
+      "name": "eliiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+      "category": "ss",
+      "description": "ss10",
+      "price": "10",
       "img": {
         "src": "https://placekitten.com/80/60",
         "alt": "cat"
