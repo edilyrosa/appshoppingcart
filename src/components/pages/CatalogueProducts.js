@@ -5,8 +5,10 @@ import { HelpHttp } from "../../helpers/helpHttp";
 import Loader from "../Loader";
 import Message from "../Message";
 import { noData, setData } from "../../actions/shoppingActions";
-import InputSearch from "../InputSearch";
-
+import InputSearch from "../InputSearch"
+import sneakers from '../../assets/sneakers.mp4'
+import makeup from '../../assets/makeup.mp4';
+import clothes from '../../assets/clothes.mp4'
 const initialInput = {
   inputSearch:'',
   inputOption:''
@@ -82,7 +84,12 @@ function CatalogueProducts() {
                             <td>{e.category}</td>
                             <td>{e.description}</td>
                             <td> $ {e.price}</td>
-                            <td> <img src={e.img.src} alt={e.img.alt} /></td>
+                            <td> 
+                                {e.category === 'sneakers' && <video   src={sneakers} alt={e.category} width="80" height="70" autoPlay loop muted/>}
+                                {e.category === 'makeup' && <video   src={makeup} alt={e.category} width="80" height="70" autoPlay loop muted/>}
+                                {e.category === 'clothes' && <video src={clothes} alt={e.category} width="80" height="70" autoPlay loop muted/>}
+
+                            </td>
                         </tr>)
                     })
                 

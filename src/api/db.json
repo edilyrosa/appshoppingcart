@@ -1,33 +1,11 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Product 01",
-      "category": "home",
-      "description": "Product 01 description",
-      "price": 100,
-      "img": {
-        "src": "https://placekitten.com/80/60",
-        "alt": "cat"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Product 02",
-      "category": "cosmetic",
-      "description": "Product 02 description",
-      "price": 200,
-      "img": {
-        "src": "https://placekitten.com/80/60",
-        "alt": "cat"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Product 03",
-      "category": "food",
-      "description": "Product 03 description",
-      "price": 300,
+      "id": 4,
+      "name": "Ramon",
+      "category": "clothes",
+      "description": "Product 04 description",
+      "price": "1",
       "img": {
         "src": "https://placekitten.com/80/60",
         "alt": "cat"
@@ -35,53 +13,20 @@
     },
     {
       "id": 5,
-      "name": "pro 6",
-      "category": "cosmetic",
-      "description": "Product 06 description",
-      "price": "600",
+      "name": "PEPSI",
+      "category": "makeup",
+      "description": "Product 04 description",
+      "price": "11",
       "img": {
         "src": "https://placekitten.com/80/60",
         "alt": "cat"
       }
     },
     {
-      "id": 8,
-      "name": "ropas",
-      "category": "clothes",
-      "description": "cute",
-      "price": "100.01",
-      "img": {
-        "src": "https://placekitten.com/80/60",
-        "alt": "cat"
-      }
-    },
-    {
-      "id": 9,
-      "name": "sss",
-      "category": "sss",
-      "description": "sss",
-      "price": 0,
-      "img": {
-        "src": "https://placekitten.com/80/60",
-        "alt": "cat"
-      }
-    },
-    {
-      "id": 10,
-      "name": "sss",
-      "category": "sss",
+      "id": 7,
+      "name": "PEPSI",
+      "category": "sneakers",
       "description": "ss",
-      "price": 0,
-      "img": {
-        "src": "https://placekitten.com/80/60",
-        "alt": "cat"
-      }
-    },
-    {
-      "id": 11,
-      "name": "xax",
-      "category": "xZX",
-      "description": "xzz",
       "price": "12",
       "img": {
         "src": "https://placekitten.com/80/60",
@@ -89,11 +34,55 @@
       }
     },
     {
+      "id": 8,
+      "name": "dd",
+      "category": "clothes",
+      "description": "Product 04 description",
+      "price": "11",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Night's dress",
+      "category": "clothes",
+      "description": "cheap",
+      "price": "10.11",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Dress",
+      "category": "clothes",
+      "description": "Expensive",
+      "price": "100.10",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Hoppink lipstick",
+      "category": "makeup",
+      "description": "expensive",
+      "price": "55.5",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
+    },
+    {
       "id": 12,
-      "name": "ddd",
-      "category": "wwww",
-      "description": "23qqq",
-      "price": "12.12",
+      "name": "Red lipstick",
+      "category": "makeup",
+      "description": "Cheap",
+      "price": "5.5",
       "img": {
         "src": "https://placekitten.com/80/60",
         "alt": "cat"
@@ -101,32 +90,10 @@
     },
     {
       "id": 13,
-      "name": "dd",
-      "category": "dd",
-      "description": "dd",
-      "price": "2",
-      "img": {
-        "src": "https://placekitten.com/80/60",
-        "alt": "cat"
-      }
-    },
-    {
-      "id": 14,
-      "name": "carne",
-      "category": "food",
-      "description": "carne",
-      "price": "23.22",
-      "img": {
-        "src": "https://placekitten.com/80/60",
-        "alt": "cat"
-      }
-    },
-    {
-      "id": 15,
-      "name": "eliiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
-      "category": "ss",
-      "description": "ss10",
-      "price": "10",
+      "name": "Sport sneakers",
+      "category": "sneakers",
+      "description": "cheap",
+      "price": "12.1",
       "img": {
         "src": "https://placekitten.com/80/60",
         "alt": "cat"
