@@ -98,6 +98,17 @@
         "src": "https://placekitten.com/80/60",
         "alt": "cat"
       }
+    },
+    {
+      "id": 14,
+      "name": "Vestido ",
+      "category": "clothes",
+      "description": "Costoso de lentejuelas",
+      "price": "1200.99",
+      "img": {
+        "src": "https://placekitten.com/80/60",
+        "alt": "cat"
+      }
     }
   ]
 }

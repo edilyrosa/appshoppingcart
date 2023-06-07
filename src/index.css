@@ -15,7 +15,7 @@ html{
 body {
   margin: 1rem;
   padding: 10px;
-  background: rgba(180, 48, 132, 0.3); 
+  background: rgba(217, 79, 166, 0.3); 
   /* background-image: url(./assets/backgroundShopping.jpg); */
   color: #611919;
   min-height: 100vh;
@@ -73,6 +73,7 @@ img{
   margin: 1rem;
   box-shadow: 0 0 1rem #00000025 inset;
 }
+
 
 .grid-responsive{
   display: grid;
@@ -189,6 +190,10 @@ nav a{
 .active{
   font-weight: bold;
   color: #61dafb;
+}
+
+a{
+  font-weight: bold;
 }
 
 h1 {

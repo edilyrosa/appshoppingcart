@@ -74,7 +74,7 @@ const [form, setForm] = useState(initialFrom);
                 required
                 />
                 <br/>
-                <label>Admit two decimals e.g. 23.01
+                <label> Admit two decimals e.g. 23.01
                     <input 
                     type="number" 
                     step="0.01"

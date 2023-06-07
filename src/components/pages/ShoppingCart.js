@@ -6,9 +6,15 @@ import Loader from "../Loader";
 import { HelpHttp } from "../../helpers/helpHttp";
 import Message from '../Message'
 import { addToCart,  deleteFromCart, noData, setData } from "../../actions/shoppingActions";
-
+import InputSearch from "../InputSearch";
+const initialInput = {
+    inputSearch:'',
+    inputOption:''
+  }
 
 function ShoppingCart() {
+
+    const [searchValue, setSearchValue] = useState(initialInput);
 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -16,6 +22,7 @@ function ShoppingCart() {
     const state = useSelector(state => state) 
     const dispatch = useDispatch()
     let {products, cart} = state.shopping; 
+    console.log('soy sohopincart');
     
     const URL = process.env.REACT_APP_API_PRODUCTS_URL
     let {get} = HelpHttp();
@@ -50,16 +57,27 @@ function ShoppingCart() {
 
     let totalToPay = totalPay();
 
+    let textInput = searchValue.inputSearch.toLowerCase();
+    let textOption = searchValue.inputOption.toLowerCase();
+    let searchedProduct = []; //Products searched by user
+    if (textInput.length < 1) searchedProduct = products;//If user hasn't writen in the input search
+         else searchedProduct = products.filter((el) =>  (el[textOption].toString()).includes(textInput.toString()))//If user has writen in the input search
+        
+
     return ( 
+        
         <div className="grid-1-2">
+            
             <section>
                 <br/>
                 <h2>Our Products</h2>
+                <InputSearch searchValue={searchValue} setSearchValue={setSearchValue}/>
+
                 <article className="box grid-responsive">
                     
                     {loading && <Loader/>}
                     {error && <Message msj={ `Error ${error.status}: ${error.statusText}`}  bgColor="#dc3545" />}
-                    {products.map(e => <ProductItems key={e.id} data={e} addToCart={() => dispatch(addToCart(e.id))} />)}
+                    {searchedProduct.map(e => <ProductItems key={e.id} data={e} addToCart={() => dispatch(addToCart(e.id))} />)}
                     
                 </article>
             </section>
@@ -71,8 +89,7 @@ function ShoppingCart() {
                    { !(Object.keys(cart).length === 0)  && <button onClick={getAllData}>Clear Cart</button>}
                    { cart.map((e, index) => <CartItems key={index} data={e} deleteOneFromCart={() => dispatch(deleteFromCart(e.id))} deleteAllFromCart={() => dispatch(deleteFromCart(e.id, true))}/>) }
                    { totalToPay > 0 && <><h3>Total to pay: $ {totalToPay}</h3> <button>Pay <i className="fa-solid fa-credit-card fa-beat fa-2xl"  style={{color:'#ee2bb0'}}></i> </button></> }
-                   {(Object.keys(cart).length === 0)  && <> <h3>Add Products to the cart</h3> <i className="fa-sharp fa-solid fa-cart-plus fa-beat fa-2xl" style={{color:'#ee2bb0'}}></i> </> }
-                   
+                   {(Object.keys(cart).length === 0)  && <> <h3>Add Products to the cart</h3> <i className="fa-sharp fa-solid fa-cart-plus fa-beat fa-2xl" style={{color:'#ee2bb0'}}></i> </> } 
                 </article>
             </section>
         </div>

@@ -16,8 +16,9 @@ function InputSearch({searchValue, setSearchValue}) {
      
     return (
         <>
-            <div>
-            <h3>Select an filter:</h3>
+            <div className="filter-Product">
+            <h3>Select a filter:</h3>
+            <br/>
             <label>
                 <input
                 type="radio"
@@ -52,7 +53,7 @@ function InputSearch({searchValue, setSearchValue}) {
             type="search"
                 className="inputSearch"
                 id="inputSearch"
-                placeholder="Select a filter to search the product?"
+                placeholder="Pick out above a filter to search the product"
                 value={searchValue.inputSearch}
                 name="inputSearch"
                 onChange={handleInputValue}

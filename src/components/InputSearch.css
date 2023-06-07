@@ -1,10 +1,10 @@
 .inputSearch {
     background: #f9fbfc;
     border-radius: 2px;
-    border: 2px solid #202329;
+    border: 2px solid #f1a3e0;
     margin: 2.5vh 10vw;
-    height: 10vh;
-    width: calc(100% - 20vw);
+    height: 8vh;
+    width: calc(100% - 10vw);
     font-size: 24px;
     text-align: center;
     font-weight: 400;
@@ -20,10 +20,22 @@
     font-weight: 400;
   }
   
-  .inputSearch:focus {
-    outline-color: #ea8fd0;
+  .inputSearch:focus{
+    outline-color: #f0438b;
+   
   }
 
-  /* .inputSearch:disabled::placeholder {
-      color: aquamarine ;
-  } */
+   .inputSearch:disabled::placeholder {
+      background-color: #f2eaf1;
+  } 
+
+ 
+  .filter-Product {
+    display: block;
+    text-align: center;
+  }
+  
+  .filter-Product > * {
+    display: inline-block;
+    vertical-align: middle;
+  }

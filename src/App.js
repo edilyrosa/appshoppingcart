@@ -4,6 +4,7 @@
 //npm i @reduxjs/toolkit axios react-redux
 //npm ls node-sass sass-loader css-loader resolve-url-loader
 //!farebase
+//todo EL FILTRO EN EL SHOPPING CART, ARREGKAR EH HOME Y HOSTEAR!!
 
 import AppRouter from "./components/AppRouter";
 import { Provider } from "react-redux";
